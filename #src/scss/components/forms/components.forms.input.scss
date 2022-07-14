@@ -1,0 +1,25 @@
+//<Input >====================================================================================================
+.input {
+	border-radius: 0 !important;
+	width: 100%;
+	max-width: rem(374);
+	display: block;
+	padding: rem(7) 0px;
+	outline: none;
+	&:focus {
+		border-color: $orange;
+	}
+	border-bottom: 3px solid $black;
+	&::placeholder {
+		color: $black;
+		font-size: rem(18);
+		font-weight: 700;
+		line-height: rem(22);
+	}
+}
+.textarea {
+	resize: none;
+	padding: rem(9px) rem(16px);
+}
+
+//</Input >====================================================================================================

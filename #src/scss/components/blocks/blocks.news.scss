@@ -1,0 +1,136 @@
+.news {
+	background: #f5f5f5;
+	padding:  rem(79) 0px;
+	&__inner {
+		text-align: center;
+	}
+	&__pagination{
+		display: inline-flex;
+		justify-content: center;
+		margin-bottom: rem(64);
+	}
+	&__page {
+		padding: 0px  rem(45) rem(20);
+	}
+
+	&__content {
+		color: #fff;
+		letter-spacing: 0.07em;
+		display: flex;
+		gap: rem(63);
+		margin-bottom: rem(77);
+	}
+
+	&__item {
+		flex: 0 1 50%;
+		@extend %flex-center;
+		flex-direction: column;
+		position: relative;
+		z-index: 2;
+		overflow: hidden;
+		position: relative;
+		background-color: #d6d6d6;
+		padding: rem(107) rem(120);
+		transition: all 0.3s ease 0s;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: #0f0f0f;
+			opacity: 0.5;
+			z-index: -1;
+
+			.news__btn {
+				background-color: #fff;
+				color: $black;
+			}
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: #000000;
+			opacity: 0;
+			z-index: -1;
+			transition: opacity 0.3s ease 0s;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				&::after {
+					opacity: 0.9;
+				}
+				.news__btn {
+					background-color: #fff;
+					color: $black;
+				}
+			}
+		}
+	}
+	&__item-bg {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__capture {
+		font-size: rem(36);
+		line-height: rem(44);
+
+		font-weight: 700;
+		margin-bottom: rem(20);
+	}
+
+	&__desc {
+		font-size: rem(18);
+		line-height: rem(22);
+		margin-bottom: rem(33);
+	}
+
+	&__btn {
+		background-color: transparent;
+		color: #fff;
+		border-color: #fff;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #fff;
+				color: $black;
+			}
+		}
+	}
+
+	&__btn-wrap {
+	}
+
+	&__btn-more {
+	}
+}
+.container {
+}
+.pnews {
+	&__pagination {
+	}
+}
+.pagination {
+	&__item {
+	}
+
+	&__item--active {
+	}
+}
+.btn {
+}
+.btn--main {
+}

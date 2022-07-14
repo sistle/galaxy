@@ -1,0 +1,29 @@
+.pagination {
+	font-size: rem(18);
+	font-weight: bold;
+	line-height: 22px;
+	letter-spacing: 0.07em;
+	border-bottom: 1px solid $black;
+	margin: 0 auto;
+
+	display: flex;
+
+
+	&__item {
+		padding-bottom: rem(21);
+		color: $black;
+		position: relative;
+		color: $black;
+		&--active {
+			&::before {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 6px;
+				width: 100%;
+				background-color: $black;
+			}
+		}
+	}
+}

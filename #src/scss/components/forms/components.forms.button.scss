@@ -1,0 +1,53 @@
+//<BUTTONS >====================================================================================================
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-appearance: none;
+	text-align: center;
+
+	font-family: inherit;
+
+	outline: none;
+	padding: rem(16) rem(15);
+	line-height: 22px;
+	font-weight: 400;
+	text-transform: uppercase;
+	transition: all 0.3s ease;
+	color: $black;
+	font-size: rem(18);
+	&--actions {
+		font-size: rem(24);
+		@include interactive-effects($hover, color);
+	}
+	&--popup {
+		color: $black;
+
+		font-weight: 700;
+		line-height: 22px;
+		border: 3px solid $black;
+		min-width: rem(290);
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: $black;
+				color: #fff;
+			}
+		}
+	}
+	&--main {
+		border: 1px solid $black;
+		padding: rem(20) rem(10);
+		min-width: rem(313);
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: $black;
+				color: #fff;
+			}
+		}
+	}
+	&[disabled] {
+		cursor: not-allowed;
+	}
+}
+//</BUTTONS>====================================================================================================

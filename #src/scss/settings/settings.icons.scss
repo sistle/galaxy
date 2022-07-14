@@ -1,0 +1,42 @@
+[class^="icon-"],
+[class*=" icon-"] {
+	&:before {
+		@extend %icons;
+		display: block;
+	}
+}
+
+.icon-letter:before {
+	content: "\e900";
+}
+.icon-fb:before {
+	content: "\e901";
+}
+.icon-inst:before {
+	content: "\e902";
+	color: #fff;
+}
+.icon-whatsapp:before {
+	content: "\e903";
+	color: #fff;
+}
+.icon-telegram:before {
+	content: "\e904";
+	color: #fff;
+}
+.icon-viber:before {
+	content: "\e905";
+	color: #fff;
+}
+.icon-cabinet:before {
+	content: "\e906";
+}
+.icon-basket:before {
+	content: "\e907";
+}
+.icon-heart:before {
+	content: "\e908";
+}
+.icon-search:before {
+	content: "\e909";
+}
