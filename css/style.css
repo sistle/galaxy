@@ -1663,15 +1663,24 @@ button.swiper-pagination-bullet {
 
 .header {
   min-height: var(--headerHeight);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  top: 0;
+}
+
+.header__wrapper {
   position: fixed;
   top: 0;
-  z-index: 20;
   width: 100%;
+  z-index: 30;
 }
 
 .header__inner {
   display: grid;
   grid-template-columns: 1fr 0.5fr 1fr;
+  min-height: var(--headerHeight);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1684,6 +1693,14 @@ button.swiper-pagination-bullet {
 
 .header__actions {
   justify-self: end;
+}
+
+.header.scroll .header__wrapper {
+  background-color: rgba(255, 255, 255, 0.979);
+}
+
+.header.scroll .header__inner {
+  padding: 0.3125rem 0px;
 }
 
 .menu__list {
@@ -1966,6 +1983,10 @@ button.swiper-pagination-bullet {
 .sales__capture {
   font-weight: 700;
   line-height: 37px;
+}
+
+.products {
+  margin-bottom: 5.625rem;
 }
 
 .products__pagination {
